@@ -145,11 +145,11 @@ def maxRegion(grid):
     #print('G = {}'.format(G))
     #print('grid = {}'.format(grid))
         
-    Steve = LargestCompDFS(n,G)
+    answer = LargestCompDFS(n,G)
     
-    return(Steve)
+    return(answer)
 
-
+# Example:
 M = [[0, 1, 0, 0, 0, 0, 1, 1, 0],
 [1, 1, 0, 0, 1, 0, 0, 0, 1],
 [0, 0, 0, 0, 1, 0, 1, 0, 0],
