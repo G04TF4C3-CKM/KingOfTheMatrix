@@ -87,7 +87,7 @@ def DrawGraph(Graph, V, get_label):
         position[ V[v] ] = ( V[v][1], - V[v][0] )
 
     nx.draw_networkx(Graph, pos=position, arrows=None, with_labels=True)
-    plt.show()
+    #plt.show()
 
     return()
 
@@ -118,7 +118,7 @@ def LargestCompDFS(n, Graph, G):
             for h in H:
                 if t in H[h]:
                     H[h].remove(t)  
-    print('Our King = {}\n'.format(Maximus))
+    print('Our King has order = {}\n'.format(Maximus))
     print('-----------------------------------------------------------------------\n')
     return(Maximus)
 
