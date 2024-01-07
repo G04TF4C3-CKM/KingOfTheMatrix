@@ -8,8 +8,6 @@ import copy
 import matplotlib.pyplot as plt
 import networkx as nx
 from collections import deque
-import random
-
 
 ####################################################################################
 ########################## My Methods ##############################################
