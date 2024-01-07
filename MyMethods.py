@@ -208,18 +208,23 @@ def maxRegion(grid):
 ####################################################################################
 
 def createRandomMatrix(n,m):
+    """ 
+    Creates a matrix of random size (no larger than n rows by m columns) containing random 1's and 0's 
+    """
 
-    M = []
+    randomMatrix = []
 
-    n = int(round( n * random.random() ))
-    m = int(round( m * random.random() ))
+    # Get the random number of rows and columns, not to exceed the input maximums
+    numRows = random.randint(1,n)
+    numColumns = random.randint(1,m)
 
-    for i in range(n):
-        M.append([])
-        for j in range(m):
-            M[i].append(int( round( random.random() ) ))
+    # Construct the matrix with 0's and 1's
+    for i in range(numRows):
+        randomMatrix.append([])
+        for j in range(numColumns):
+            randomMatrix[i].append(random.randint(0,1))
 
-    return(M)
+    return(randomMatrix)
 
 ####################################################################################
 ####################################################################################
